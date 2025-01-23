@@ -1,21 +1,24 @@
-import React from "react";
 
+
+
+import React from "react";
 import Navbar from "../../../reuseable/Navbar";
+
 const HeroSection = ({ title, backgroundImage }) => {
-  // console.log("backgroundImage:",backgroundImage);
-  // console.log("title:",title);
   return (
     <div
-      className="bg-about-image  bg-cover  h-screen border-2  border-gray-400"
+      className="bg-cover bg-center h-screen relative"
       style={{
-        backgroundImage: `url(${backgroundImage})`,}}>
-      <Navbar />
-
-      <div className="relative max-w-3xl mx-auto px-4 top-32 right-72 ">
-        <h1 className="text-4xl md:text-6xl font-bold mt-4 justify-center flex text-[#FFFFFF]">
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
+     
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl  tracking-wide  px-4 py-2  text-white font-inter text-[72px] font-semibold leading-normal">
           {title}
         </h1>
       </div>
+      <Navbar />
     </div>
   );
 };

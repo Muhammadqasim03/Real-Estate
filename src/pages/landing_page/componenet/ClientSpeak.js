@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 
 const ClientSpeak = () => {
@@ -56,36 +53,37 @@ const ClientSpeak = () => {
   ];
 
   return (
-    <div className="container p-4">
-      <div className="w-[700px] ml-96 mt-12">
-        <div className="text-center">
-          <h2 className="font-sans font-medium text-2xl">
-            Our Client<span className="text-[#34E0A1]"> Speak</span>
-          </h2>
-        </div>
-        <div className="text-[#0A0A0A66]">
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat{" "}
-            <span className="ml-20">
-              duis enim velit mollit.Exercitation veniam consequat sunt nostrud
-              amet.
-            </span>
-          </p>
+    <div className=" container mx-auto px-4  bg-white   pt-12">
+      <div className="relative container px-4 mx-auto  bg-white ">
+        <div className=" grid grid-cols-12">
+          <div className="col-span- "></div>
+          <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-10 ">
+            <h2 className=" text-center font-sans font-medium text-4xl sm:text-2xl  md:text-5xl">
+              Our Clients <span className="text-[#34E0A1]"> Speak </span>
+            </h2>
+            <div className="text-[#0A0A0A66]  text-center pt-4 ">
+              <p className="text-[rgba(10,10,10,0.40)] text-center text-[20px] font-normal leading-normal font-inter font-feature-off  pt-5 ">
+              We have been working with clients around the world
+              </p>
+            </div>
+          </div>
+          <div className="col-span-2"></div>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 mt-12 p-4 ml-24">
+      <div className="sm:grid grid-cols-1   mt-12 p-4   lg:grid-cols-3 bg-white place-items-center">
         {cardData[activePage - 1].map((card, index) => (
           <div
             key={index}
-            className="inner-div relative w-80 p-6 bg-white rounded-lg text-center"
+            className="inner-div relative w-80 p-6 bg-white rounded-lg text-center "
           >
-            <div className="card-data border-2 shadow-2xl">
+            <div className="card-data border shadow-xl  rounded-lg">
               <div className="text-4xl text-teal-300">
                 <b>“</b>
               </div>
-              <h2 className="text-lg font-bold text-black mb-2">{card.title}</h2>
+              <h2 className="text-lg font-bold text-black mb-2">
+                {card.title}
+              </h2>
               <p className="text-sm text-gray-500 mb-4">{card.text}</p>
             </div>
             <div className="absolute left-[147px] top-[168px] transform -translate-x-1/2 w-5 h-5 bg-white shadow-lg rotate-45"></div>
@@ -103,7 +101,7 @@ const ClientSpeak = () => {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 mb-2 ml-5">
         {[1, 2].map((page) => (
           <div
             key={page}

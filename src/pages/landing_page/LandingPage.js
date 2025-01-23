@@ -13,7 +13,7 @@ import Footer from "../../reuseable/Footer";
 
 const landingPage = ({ title, backgroundImage }) => {
   return (
-    <div className="m-auto">
+    <div className="">
       <HeroSection title =""/>
       <Properties></Properties>
       <OurFeature></OurFeature>

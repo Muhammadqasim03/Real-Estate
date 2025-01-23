@@ -1,36 +1,42 @@
 import React from "react";
 import Navbar from "../../../reuseable/Navbar";
-import Detail from "../../landing_page/componenet/Detail";
+import Detail from "../../../reuseable/Detail";
+
+
 const HeroSection = () => {
-
   return (
-    <div className="bg-hero-image bg-cover bg-center h-screen">
-      <Navbar></Navbar>
+    <div className="bg-hero-image bg-cover  xl:h-[721px] md:h-[600px]  h-[75vh]  ">
+      <Navbar />
+      <div className="  ">
+        <div className="container mx-auto px-4 relative xl:top-36 md:top-16 sm: top-16   ">
+          <div className="grid grid-cols-12 ">
+            <div className="lg:col-span-6 col-span-12  ">
+              <h3 className="text-sm uppercase  text-white tracking-wider flex  ml-1 font-inter font-medium">
+                <hr className="w-10 mt-3 mr-3 " />
+                We are offering the
+               
+              </h3>
+              <h1 className=" pt-4 text-3xl   flex  md:text-6xl font-bold  text-white  md:top-8 ,  ">
+                Best Real Estate Deals
+              </h1>
 
-     
-     <div className="">
-     <div className="relative max-w-3xl mx-auto px-4 top-32 right-72">
-        <h3 className="text-sm uppercase text-gray-200 tracking-wider flex   ">
-         <hr className="w-14 mt-3 mr-3 "></hr>
-          We are offering the
-        </h3>
-        <h1 className="text-4xl md:text-6xl font-bold mt-4 text-white ">
-          Best Real Estate Deals
-        </h1>
-        <p className="mt-4 text-gray-200 leading-relaxed">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button className="mt-6 px-8 py-3 bg-[#34E0A1] text-white rounded hover:bg-green-600 transition">
-          More Details
-        </button>
-     </div>
-     
-       <Detail></Detail>
-     </div>
-    
-    </div> 
+              <p className="  text-white leading-relaxed  pt-4   md:inline-block md:top-10    ">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet....
+              </p>
+
+              <div className=" pt-5">
+                <button className="p-[8px_20px] bg-[#34E0A1] text-white rounded hover:bg-[#34e0a1cc] transition font-medium text-[20px] leading-8 ">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Detail />
+      </div>
+    </div>
   );
 };
 
