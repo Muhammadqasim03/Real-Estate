@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PropertyList from "../../../reuseable/PropertyList";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
+
 const PropertyCards = () => {
+        const navigate=useNavigate()
+
+        const SingleAgentDetails =()=>{
+            navigate('/SingleAgentDetail')
+        }
   return (
     <div className=" bg-white  ">
       <div className=" container mx-auto px-4  pt-12  mb-20">
@@ -123,7 +131,7 @@ const PropertyCards = () => {
 
           <div className=" ">
          
-            <div className="flex p-[35px_42px] items-start gap-[10px] mx-auto rounded-[5px] bg-white shadow-[0px_0px_54px_5px_rgba(20,20,20,0.10)]  ">
+            <div className="flex p-[35px_42px] items-start gap-[10px] mx-auto rounded-[5px] bg-white shadow-[0px_0px_54px_5px_rgba(20,20,20,0.10)] " onClick={SingleAgentDetails}>
               <div className="flex flex-col items-start gap-[25px]  ">
                 <h3 className="text-[#0A0A0A] font-inter text-[25px] font-medium leading-[118.5%]">
                   About Agent

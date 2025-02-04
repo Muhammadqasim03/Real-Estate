@@ -30,7 +30,7 @@ const PropertyList = () => {
               
             </div>
             <div className=" h-[52px]   flex items-center border p-1 border-[#0A0A0A66] cursor-pointer text-[#0A0A0A] font-normal">
-              <FontAwesomeIcon icon={faBath} className="text-[#34E0A1]" />
+              <FontAwesomeIcon icon={faBath} className="text-[#34E0A1]" /> 
               <span className="text-[#0A0A0A66] mx-1">|</span>
               <span className="text-gray-700">{property.details.baths} Baths</span>
 

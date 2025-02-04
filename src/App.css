@@ -3,22 +3,19 @@ body{
 }
 
 
-/* .custom-select { */
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
-    /* background-color: red; */
-   
-    /* padding-right: 30px;  */
-  /* } */
+/* .custom-select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 40px 10px 10px;
+}
   
-  /* Custom arrow styling */
-  /* .custom-select::after {
-    content: '▼'; 
-    color: green; 
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-  } */
+.custom-select::after {
+  content: '↓'; 
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+} */

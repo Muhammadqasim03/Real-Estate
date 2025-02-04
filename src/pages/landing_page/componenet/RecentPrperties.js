@@ -18,18 +18,7 @@ const RecentPrperties = () => {
   return (
     <div className="relative container mx-auto px-4 pt-16 ">
       <div className="relative container mx-auto px-4  ">
-        {/* <div className=" grid grid-cols-12  border-2 ">
-           <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-10  border-2  ">
-             <h2 className="text-center text-5xl font-semibold leading-normal tracking-wide  text-[#0A0A0A] font-inter">
-             Recent <span className="text-[#34E0A1] text-5xl font-semibold leading-normal tracking-wide capitalize font-inter"> Properties </span>
-             </h2>
-             <div className="  ">
-               <p className="text-[rgba(10,10,10,0.40)] text-center text-[20px] font-normal leading-normal font-inter font-feature-off ">
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-               </p>
-             </div>
-           </div>
-         </div> */}
+        
          
 
         <div className="grid grid-cols-12  pt-5 ">
@@ -53,7 +42,7 @@ const RecentPrperties = () => {
         </div>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2 gap-6  ">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2 gap-6   pt-12">
         <div className="shadow-lg rounded-lg ">
           <img
             src="../../../../Images/Image 6 (2).png"
@@ -73,11 +62,11 @@ const RecentPrperties = () => {
           </p>
           <button
             onClick={toggleReadMore}
-            className="text-[#34E0A1] font-semibold hover:underline"
+            className="text-[#34E0A1]  hover:underline text-base font-normal leading-[34px] tracking-[3px] font-inter font-feature-off"
           >
             {showFullText ? "" : "Read more"}
           </button>
-          <div className="mt-12">
+          <div className="mt-32">
             <p className="text-black font-bold text-2xl">$ 20,000/ Month</p>
           </div>
         </div>
@@ -95,11 +84,11 @@ const RecentPrperties = () => {
           </p>
           <button
             onClick={toggleText}
-            className="text-[#34E0A1] font-semibold hover:underline"
+            className=" hover:underline text-[#34E0A1]  text-base font-normal leading-[34px] tracking-[3px] font-inter font-feature-off"
           >
             {showText ? "" : "Read more"}
           </button>
-          <div className="mt-12">
+          <div className="mt-32">
             <p className="text-black font-bold text-2xl">$ 26,000/ Month</p>
           </div>
         </div>

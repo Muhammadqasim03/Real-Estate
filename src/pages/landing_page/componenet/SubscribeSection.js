@@ -13,7 +13,7 @@ const SubscribeSection = () => {
 
 
      
-      <div className="text-white container  borde-2 mx-auto px-4 gap-4   border-2  flex flex-col justify-center justify-items-center ">
+      <div className="text-white container  borde-2 mx-auto px-4 gap-4     flex flex-col justify-center justify-items-center ">
         <h2 className="text-white font-inter text-4xl font-semibold tracking-[1.04px] capitalize ">Don’t Miss A Thing!</h2>
         <p className="text-white font-inter text-base font-medium leading-[42px] tracking-normal">
           Subscribe with Email and loads of interesting news will be sent to you on a daily basis.

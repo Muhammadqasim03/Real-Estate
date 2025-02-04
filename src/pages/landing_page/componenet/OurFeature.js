@@ -23,11 +23,11 @@ const Our_Feature = () => {
 
   return (
     <div className="relative container px-5 mx-auto pt-24 bg-[rgba(208, 213, 221, 1)]  ">
-      <h2 className="font-[inter] font-semibold text-5xl  text-[rgba(10, 10, 10, 1)]  ">
+      <h2 className="font-[inter] font-semibold text-5xl  text-[rgba(10, 10, 10, 1)]   ">
         Our <span className="text-[#34E0A1] font-semibold text-5xl font-[inter]"> Features</span>
       </h2>
-      <div className=" lg:grid grid-cols-2 pt-20  gap-14  ">
-        <div className="  ">
+      <div className=" lg:grid grid-cols-2 pt-16  gap-14 ">
+        <div className=" ">
           {dataList.map((item, index) => (
             <div
               key={index}

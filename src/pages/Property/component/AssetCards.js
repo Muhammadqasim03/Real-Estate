@@ -1,11 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBed,
-  faBath,
-  faCar,
-  faRulerCombined,
-} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
+import {Sqft ,Baths , Parking , Beds} from "../../../reuseable/Icons.jsx"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faBed,
+//   faBath,
+//   faCar,
+ 
+// } from "@fortawesome/free-solid-svg-icons";
 const properties = [
   {
     price: "$4500/Mo",
@@ -59,22 +61,27 @@ const properties = [
 ];
 
 const AssetCards = ({ className }) => {
+  const navigate = useNavigate()
+  const naviagteSingleProperty =()=>{
+    navigate('/singleproperty')
+      
+  }
   return (
     <div className={className}>
       <div className="bg-[#F7FEFB] min-h-screen  ">
         <div className="container mx-auto   grid grid-rows-1 ">
           <div className=" p-12">
-            <h1 className="text-[#0A0A0A] text-center font-inter lg:text-[52px]  md:text-[52px] text-[30px] xxs:text-[25px] font-semibold lg:leading-[61.62px] ">
+            <h1 className="text-[#0A0A0A] text-center font-inter lg:text-[52px]   md:text-[52px] text-[30px] xxs:text-[25px] font-semibold lg:leading-[61.62px] ">
               Properties For Sale In <br></br>Your Favorite Area
             </h1>
           </div>
           <div className="container mx-auto px-4 ">
             <div className=" p-4 bg-white rounded-md">
-              <div className="grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  rounded-lg  justify-items-center   ">
+              <div className="grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4  rounded-lg  justify-items-center   ">
                 {properties.map((property, index) => (
                   <div
                     key={index}
-                    className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[550px]  "
+                    className="bg-white rounded-lg shadow-md overflow-hidden w-full   "
                   >
                     <img
                       src={property.image}
@@ -84,7 +91,7 @@ const AssetCards = ({ className }) => {
                     <div className="p-4 ">
                       <div className="flex justify-between items-center ">
                         <h2 className="text-xl font-bold ">{property.price}</h2>
-                        <span className="font-medium p-[22px_19px] items-center justify-center flex text-white bg-[#34E0A1] h-9 rounded-md cursor-pointer ">
+                        <span className="font-medium p-[22px_19px] items-center justify-center flex text-white bg-[#34E0A1] h-9 rounded-md cursor-pointer " onClick={naviagteSingleProperty}>
                           {property.status}
                         </span>
                       </div>
@@ -98,44 +105,37 @@ const AssetCards = ({ className }) => {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4  lg:grid-cols-3 gap-2  pt-4 whitespace-pre overflow-ellipsis ">
                         <div className=" p-[14px_17px] flex justify-center items-center rounded-[5px] border-[1px] border-solid border-[rgba(10,10,10,0.40)] bg-white">
-                          <span className="items-center text-sm">
-                            <FontAwesomeIcon
+                          <span className="flex  items-center">
+                            {/* <FontAwesomeIcon
                               icon={faBed}
                               style={{ color: "black" }}
-                            />
+                            /> */}
+                            <Beds></Beds>
                             <span className="text-[#0A0A0A66] px-1">|</span>
                             {property.details.beds}Beds
                           </span>
                         </div>
 
                         <div className="p-[14px_17px] flex justify-center gap-[10px] rounded-[5px] border-[1px] border-solid border-[rgba(10,10,10,0.40)] bg-white">
-                          <span>
-                            <FontAwesomeIcon
-                              icon={faBath}
-                              style={{ color: "black" }}
-                            />
+                          <span className="flex">
+                            <Baths></Baths>
                             <span className="text-[#0A0A0A66] px-1 ">|</span>
                             {property.details.baths} Baths
                           </span>
                         </div>
 
                         <div className="p-[14px_17px] flex justify-center  gap-[10px] rounded-[5px] border-[1px] border-solid border-[rgba(10,10,10,0.40)] bg-white">
-                          <span className="cursor-pointer ">
-                            <FontAwesomeIcon
-                              icon={faCar}
-                              style={{ color: "black" }}
-                            />
+                          <span className="flex items-center ">
+                            <Parking></Parking>
                             <span className="text-[#0A0A0A66] px-1">|</span>
                             {property.details.parking} Parking
                           </span>
                         </div>
 
                         <div className="p-[14px_17px] flex justify-center gap-[10px] rounded-[5px] border-[1px] border-solid border-[rgba(10,10,10,0.40)] bg-white">
-                          <span className="cursor-pointer">
-                            <FontAwesomeIcon
-                              icon={faRulerCombined}
-                              style={{ color: "black" }}
-                            />
+                          <span className="items-center flex">
+                            <Sqft ></Sqft>
+                            
                             <span className="text-[#0A0A0A66] px-1">|</span>
                             {property.details.area}
                           </span>
