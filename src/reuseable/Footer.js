@@ -70,7 +70,7 @@ const Footer = () => {
             Subscribe to our newsletter for notifications about new updates.
           </p>
 
-          <div className="h-[51px] w-[298px] shrink-0 rounded-lg  flex items-center mt-4    ">
+          <div className="h-[51px] max-w-[298px] shrink-0 rounded-lg  flex items-center mt-4    ">
             <input
               type="email"
               placeholder="Enter your email..."
