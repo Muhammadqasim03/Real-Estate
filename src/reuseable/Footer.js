@@ -98,7 +98,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between text-white text-sm border-t border-gray-700 mt-8 pt-4">
         <p className="text-center lg:text-left">
           Copyright ©2023 All rights reserved | This is made with ❤️ by
-          VirtuaNets
+          Qasim.dev
         </p>
 
         <div className="flex justify-center lg:justify-end gap-6 mt-2">
